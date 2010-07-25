@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="<%= I18n.locale %>">
+<head>
+  <meta charset="UTF-8">
+  <title><%= t 'store.title' %> (:<%= I18n.locale %>)</title>
+  <%= stylesheet_link_tag 'screen' %>
+  <%= javascript_include_tag 'jQuery', 'application' %>
+  <%= csrf_meta_tag %>
+</head>
+<body>
+
+<div class="container">
+  <header>
+    <hgroup>
+      <h1><%= t 'store.title' %></h1>
+      <h2><%= t 'store.tagline' %></h2>
+    </hgroup>
+  </header>
+
+  <hr class="stripes"/>
+
+  <div id="content">
+    <%= yield %>
+    
+    <%= link_to image_tag("github-ribbon.png", :alt => "Fork Me On Github"), "http://github.com/mattt/Rails-I18n-Example", :id => "fork-me-on-github" %>
+  </div>
+
+  <footer>
+    <span id="opening-hours">
+      <%= t "store.open" %>
+      <time id="opens-at"><%= l Time.now.beginning_of_day + 8.hours, :format => :time %></time>
+      <%= t "time.from-to" %>
+      <time id="closes-at"><%= l Time.now.beginning_of_day + 18.hours, :format => :time %></time>
+      <%= t "time.everyday" %>
+    </span>
+  </footer>
+</div>
+
+</body>
+</html>

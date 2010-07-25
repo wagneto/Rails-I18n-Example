@@ -1,0 +1,11 @@
+<section>
+  <ul class="clearfix">
+    <% @products.each do |product| %>
+      <li class="product">
+        <%= image_tag(product.image.url, :size => "100x100") %>
+        <span class="name"><%= product %></span>
+        <span class="price"><%= localized_unit_price(product.unit_price, product.unit) %></span>
+      </li>
+    <% end %>
+  </ul>
+</section>

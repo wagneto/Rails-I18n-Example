@@ -1,0 +1,24 @@
+en:
+  store:
+    title: Zelig St. Groceries
+    tagline: Fine Organic Produce Since 1987
+    open: Open
+
+  time:
+    formats:
+      default: "%A, %d. %B %Y, %H:%M"
+      short: "%d. %B, %H:%M"
+      long: "%A, %d. %B %Y, %H:%M"
+      time: "%I:%M %p"
+
+    am: "AM"
+    pm: "PM"
+
+    "from-to": "—"
+    everyday: Everyday
+
+  units:
+    lb: lb
+    kg: kg
+    each: ea.
+
