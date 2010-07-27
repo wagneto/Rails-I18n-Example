@@ -1,7 +1,7 @@
 TRANSLATIONS = {
   "Apples"        => {:ja => "林檎",      :fr => "Pommes"   },
   "Bananas"       => {:ja => " バナナ",    :fr => "Bananes"  },
-  "Pears"         => {:ja => " ピアーズ",   :fr => "Poires"   },
+  "Pears"         => {:ja => "梨",       :fr => "Poires"   },
   "Oranges"       => {:ja => " オレンジ",   :fr => "Oranges"  },
   "Kiwis"         => {:ja => " キーウィ",   :fr => "Kiwis"    },
   "Strawberries"  => {:ja => " 苺",      :fr => "Fraises"  },
