@@ -3,6 +3,8 @@ Rails I18n API Example - Zelig St. Groceries
 
 This site was created as a part of a talk for the July 2010 meeting of Austin on Rails. It serves as a case study to explore localization and internationalization using Rails 3.
 
+Slides for the presentation are available at [http://www.slideshare.net/matttthompson/i18n-and-l10n-with-rails-3](http://www.slideshare.net/matttthompson/i18n-and-l10n-with-rails-3)
+
 ## Demo
 
 Check it out at: [http://zelig-st-groceries.heroku.com/](http://zelig-st-groceries.heroku.com/)
