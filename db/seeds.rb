@@ -1,14 +1,14 @@
 TRANSLATIONS = {
-  "Apples"        => {:ja => "\u6797 \u6A8E",                             :fr => "Pommes"  },
-  "Bananas"       => {:ja => "\u30D0 \u30CA \u30CA",                      :fr => "Bananes" },
-  "Pears"         => {:ja => "\u68A8",                                    :fr => "Poires"  },
-  "Oranges"       => {:ja => "\u30AA \u30EC \u30F3 \u30B8",               :fr => "Oranges" },
-  "Kiwis"         => {:ja => "\u30AD \u30FC \u30A6 \u30A3",               :fr => "Kiwis"   },
-  "Strawberries"  => {:ja => "\u82FA",                                    :fr => "Fraises" },
-  "Grapes"        => {:ja => "\u8461 \u8404",                             :fr => "Raisin"  },
-  "Carrots"       => {:ja => "\u4EBA \u53C2",                             :fr => "Carottes"},
-  "Broccoli"      => {:ja => "\u30D6 \u30ED \u30C3 \u30B3 \u30EA \u30FC", :fr => "Brocoli" },
-  "Onions"        => {:ja => "\u7389 \u8471",                             :fr => "Oignons" }
+  "Apples"        => {:fr => "Pommes",    :ja => "\\u6797 \\u6A8E"},
+  "Bananas"       => {:fr => "Bananes",   :ja => "\\u30D0 \\u30CA \\u30CA"},
+  "Pears"         => {:fr => "Poires",    :ja => "\\u68A8"},
+  "Oranges"       => {:fr => "Oranges",   :ja => "\\u30AA \\u30EC \\u30F3 \\u30B8"},
+  "Kiwis"         => {:fr => "Kiwis",     :ja => "\\u30AD \\u30FC \\u30A6 \\u30A3"},
+  "Strawberries"  => {:fr => "Fraises",   :ja => "\\u82FA"},
+  "Grapes"        => {:fr => "Raisin",    :ja => "\\u8461 \\u8404"},
+  "Carrots"       => {:fr => "Carottes",  :ja => "\\u4EBA \\u53C2"},
+  "Broccoli"      => {:fr => "Brocoli",   :ja => "\\u30D6 \\u30ED \\u30C3 \\u30B3 \\u30EA \\u30FC"},
+  "Onions"        => {:fr => "Oignons",   :ja => "\\u7389 \\u8471"}
 }
 
 Product.create(:title => "Apples",          :unit_price => 1.29, :unit => 'lb')
@@ -23,7 +23,7 @@ Product.create(:title => "Broccoli",        :unit_price => 3.19, :unit => 'each'
 Product.create(:title => "Onions",          :unit_price => 1.99, :unit => 'lb')
 
 Product.all.each do |product|
-  filename = File.join(RAILS_ROOT, "db", "stock-images", "#{product.title.downcase}.jpg")
+  filename = File.join(Rails.root, "db", "stock-images", "#{product.title.downcase}.jpg")
   product.image = File.new(filename) rescue nil
   product.save!
 end
