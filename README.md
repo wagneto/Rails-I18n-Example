@@ -9,34 +9,34 @@ Slides for the presentation are available at [http://www.slideshare.net/mattttho
 
 Check it out at: [http://zelig-st-groceries.heroku.com/](http://zelig-st-groceries.heroku.com/)
 
-Try changing the locale by adding <tt>[?locale=ja](http://zelig-st-groceries.heroku.com?locale=ja)</tt> or <tt>[?locale=fr]((http://zelig-st-groceries.heroku.com?locale=fr)</tt> to the end of the URL.
+Try changing the locale by adding `[?locale=ja](http://zelig-st-groceries.heroku.com?locale=ja)` or `[?locale=fr]((http://zelig-st-groceries.heroku.com?locale=fr)` to the end of the URL.
 
 # How To Use
 
-- <tt>git clone git://github.com/mattt/Rails-I18n-Example.git zelig-st-groceries</tt>
-- <tt>cd zelig-st-groceries</tt>
-- <tt>rake db:migrate db:seed</tt>
-- <tt>rails s</tt>
+- `git clone git://github.com/mattt/Rails-I18n-Example.git zelig-st-groceries`
+- `cd zelig-st-groceries`
+- `bundle install`
+- Create and configure `config/database.yml`
+- `rake db:migrate db:seed`
+- `rails s`
 - Open localhost:3000 in your browser
 
 You can change the locale of the application by setting one of the following:
 
-- **<tt>locale</tt> Parameter**: (eg localhost:3000?locale=ja)
+- `locale` **Parameter**: (eg localhost:3000?locale=ja)
 - **Top-Level Domain\***: (eg ja.localhost:3000)
 - **Subdomain\***: (eg localhost.jp:3000)
 
 ## \* Optional Step to Enable Locale Switching with Subdomains and TLDs on localhost
 
-Add the following at the end of <tt>/etc/hosts</tt>:
+Add the following at the end of `/etc/hosts`:
 
-<pre><code>
-  127.0.0.1 en.localhost
-  127.0.0.1 ja.localhost
-  127.0.0.1 fr.localhost
-  
-  127.0.0.1 localhost.jp
-  127.0.0.1 localhost.fr
-</code></pre>
+    127.0.0.1 en.localhost
+    127.0.0.1 ja.localhost
+    127.0.0.1 fr.localhost
+    
+    127.0.0.1 localhost.jp
+    127.0.0.1 localhost.fr
 
 ## Dependencies
 
