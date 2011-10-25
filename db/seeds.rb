@@ -1,14 +1,14 @@
 TRANSLATIONS = {
-  "Apples"        => {:ja => "林檎",      :fr => "Pommes"   },
-  "Bananas"       => {:ja => " バナナ",    :fr => "Bananes"  },
-  "Pears"         => {:ja => "梨",       :fr => "Poires"   },
-  "Oranges"       => {:ja => " オレンジ",   :fr => "Oranges"  },
-  "Kiwis"         => {:ja => " キーウィ",   :fr => "Kiwis"    },
-  "Strawberries"  => {:ja => " 苺",      :fr => "Fraises"  },
-  "Grapes"        => {:ja => " 葡萄",     :fr => "Raisin"   },
-  "Carrots"       => {:ja => " 人参",     :fr => "Carottes" },
-  "Broccoli"      => {:ja => " ブロッコリー", :fr => "Brocoli"  },
-  "Onions"        => {:ja => " 玉葱",     :fr => "Oignons"  }
+  "Apples"        => {:ja => "\u6797 \u6A8E",                             :fr => "Pommes"  },
+  "Bananas"       => {:ja => "\u30D0 \u30CA \u30CA",                      :fr => "Bananes" },
+  "Pears"         => {:ja => "\u68A8",                                    :fr => "Poires"  },
+  "Oranges"       => {:ja => "\u30AA \u30EC \u30F3 \u30B8",               :fr => "Oranges" },
+  "Kiwis"         => {:ja => "\u30AD \u30FC \u30A6 \u30A3",               :fr => "Kiwis"   },
+  "Strawberries"  => {:ja => "\u82FA",                                    :fr => "Fraises" },
+  "Grapes"        => {:ja => "\u8461 \u8404",                             :fr => "Raisin"  },
+  "Carrots"       => {:ja => "\u4EBA \u53C2",                             :fr => "Carottes"},
+  "Broccoli"      => {:ja => "\u30D6 \u30ED \u30C3 \u30B3 \u30EA \u30FC", :fr => "Brocoli" },
+  "Onions"        => {:ja => "\u7389 \u8471",                             :fr => "Oignons" }
 }
 
 Product.create(:title => "Apples",          :unit_price => 1.29, :unit => 'lb')
