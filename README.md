@@ -16,7 +16,6 @@ Try changing the locale by adding `[?locale=ja](http://zelig-st-groceries.heroku
 - `git clone git://github.com/mattt/Rails-I18n-Example.git zelig-st-groceries`
 - `cd zelig-st-groceries`
 - `bundle install`
-- Create and configure `config/database.yml`
 - `rake db:migrate db:seed`
 - `rails s`
 - Open localhost:3000 in your browser
